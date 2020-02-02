@@ -1,9 +1,20 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": [
+    "@schematics/angular"
+  ],
   "schematics": {
     "essentials": {
       "description": "A blank schematic.",
       "factory": "./essentials/index#essentials"
+    },
+    "essentialsNgModuleAdd": {
+      "description": "Refactors modules in a project to follow Essentials format.",
+      "factory": "./essentialsNgModule/index#essentialsNgModuleAdd"
+    },
+    "essentialsNgModuleUpdate": {
+      "description": "Refactors modules in a project to follow Essentials format.",
+      "factory": "./essentialsNgModule/index#essentialsNgModuleUpdate"
     }
   }
 }
